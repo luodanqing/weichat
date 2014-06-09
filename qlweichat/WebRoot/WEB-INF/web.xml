@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+	
+	<!-- Servlet处理类 -->
+	<servlet>
+		<servlet-name>coreServlet</servlet-name>
+		<servlet-class>org.luolu.course.servlet.CoreServlet</servlet-class>
+	</servlet>
+	
+	 
+	
+	<servlet-mapping>
+		<servlet-name>coreServlet</servlet-name>
+		<url-pattern>/coreServlet</url-pattern>
+	</servlet-mapping>
+	
+	  <!--配置Sring MVC的核心控制器DispatcherServlet -->  
+  
+    <servlet>  
+        <servlet-name>weichat</servlet-name>  
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>  
+    </servlet>  
+  
+    <!--为DispatcherServlet建立映射 -->  
+  
+    <servlet-mapping>  
+        <servlet-name>weichat</servlet-name>  
+        <url-pattern>*.htm</url-pattern>  
+    </servlet-mapping>  
+</web-app>

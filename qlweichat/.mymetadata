@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="luolu"
+  id="myeclipse.1400752009565"
+  context-root="/luolu"
+  j2ee-spec="5.0"
+  archive="luolu.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
